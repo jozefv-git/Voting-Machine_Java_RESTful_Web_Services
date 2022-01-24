@@ -1,0 +1,4 @@
+
+.answer-radio:hover + label:hover {
+    cursor: default !important;
+}

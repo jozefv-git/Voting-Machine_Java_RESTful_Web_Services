@@ -1,0 +1,729 @@
+/*Fonts*/
+@import
+	url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700&display=swap")
+	;
+html, body {
+	background-color: #EDF2FD;
+	font-family: "Roboto", sans-serif;
+}
+
+/*Navigation bar*/
+.blob {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 4px;
+	padding-left: 24px;
+}
+
+.firstblob {
+	padding-left: 24px;
+}
+
+.mainRow {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.mainColumn {
+	max-width: 1400px;
+	width: 70%;
+}
+
+.questionArticle {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mainMainColumn {
+	padding: 0;
+
+}
+
+.topLine {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	padding-bottom: 8px;
+	margin-bottom: 0;
+	text-align: left;
+	padding-left: 24px;
+	padding-top: 72px;
+	
+}
+
+.forMainBox {
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+
+.forMainBoxDashboard {
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+
+.mainBoxDashboard {
+	background: #FAFAFA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mainRowInDashboard {
+	width: 100%;
+}
+
+.questionList, .politicianList {
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 75px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+/*.buttonColumns {
+	min-height: 500px;
+}*/
+.buttonColumns1 {
+	padding-right: 24px;
+}
+
+.buttonColumns {
+	padding-left: 24px;
+}
+
+.mainBox {
+	background: #FAFAFA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	width: 100%;
+}
+
+.question {
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 42px;
+	text-align: center;
+	padding: 32px 24px 40px 24px;
+	margin-bottom: 0;
+}
+
+.agreement {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	display: flex;
+	align-self: center;
+	margin: 0 1% 0 1%;
+	width: 20%;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.agreement1 {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	display: none;
+	align-self: center;
+	margin: 0 1% 0 1%;	
+}
+
+
+.arrow {
+	font-size: 95px;
+	text-decoration: none;
+	text-transform: none;
+	color: black;
+	/*padding: 0 40px 0 40px;*/
+	width: 100%;
+}
+
+.arrowColumn {
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.secondArrowColumn {
+	display: none;
+}
+
+.arrow:hover {
+	text-decoration: none;
+	text-transform: none;
+	color: black;
+}
+
+.botMainBox {
+	display: flex;
+	justify-content: center;
+	padding: 0 8px 32px 8px;
+	width: 100%;
+}
+
+.insideMainBoxRow {
+	width: 100%;
+}
+
+.mainColumnInsideColumn {
+	padding: 0;
+}
+
+.form-check-input {
+  height: 36px;
+  width: 36px !important;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin-right: 1%;
+}
+
+#inlineRadio5 {
+	margin: 0 !important;
+}
+
+.form-check-input:checked[type="radio"],
+.form-check-input:focus {
+  background: #3D5A80;
+  border: 1px solid #000000;
+  outline: none;
+  box-shadow: none;
+} 
+
+.divForRadio {
+	width: 42px !important;
+	padding: 0;
+}
+
+.showResults {
+	float: right;
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+
+.forShowResults {
+	padding-right: 0; 
+}
+
+
+
+@media only screen and (max-width: 1187px) {
+	.questionList, .politicianList {
+		font-size: 40px;
+	}
+
+}
+
+@media only screen and (max-width: 1041px) {
+	.mainColumn {
+		width: 95%;
+	}
+
+	.form-check-input {
+	  margin-right: 1%;
+	}
+
+	.fromLeft {
+		margin-right: 1%;
+	}
+
+	.inputColumns {
+		width: 70% !important;
+	}
+
+	.submitBtnColumns {
+		width: 30% !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.firstArrowColumn{
+		display: none;
+	}
+
+	.secondArrowColumn {
+		display: flex;
+	}
+
+	.arrowColumn {
+		width: 50%;
+	}
+
+	.forShowResults{
+		display: flex;
+		justify-content: center;
+	}
+
+	.forMainBox {
+		margin-bottom: 40px;
+	}
+
+	.politicianList {
+		margin-top: 24px;
+	}
+
+	.inputColumns {
+		width: 95% !important;
+		padding-left: 24px !important;
+		padding-right: 24px !important;
+		margin-bottom: 16px;
+	}
+
+	.formRow {
+		display: flex;
+		justify-content: center;
+	}
+
+	.submitBtnColumns {
+		width: 100% !important;
+		display: flex;
+		justify-content: center;
+	}
+
+	.aTitle, .topLine {
+		text-align: left !important;
+		padding-left: 24px !important;
+		padding-right: 24px !important;
+		font-size: 1rem;
+	}
+	
+	.questionParag {
+		text-align: left !important;
+		padding-left: 24px !important;
+		padding-right: 24px !important;
+	}
+
+	.buttonsColumns {
+		width: 100%;
+		display: flex !important;
+		justify-content: center !important;
+		margin-top: 24px;
+	}
+
+	.deleteBtn, .deleteBtn1, .submitEmail {
+		margin-right: 0 !important;
+	}
+
+	.delBtnCol1 {
+		width: 100%;
+		display: flex;
+		justify-content: center !important;
+		margin-top: 24px;
+	}
+	
+	.deleteBtn1 {
+		font-size: 16px !important;
+	}
+	
+	.deleteBtn1, .submitEmail {
+		height: 42px !important;
+	}
+
+	.politicianParag {
+		padding-left: 24px !important;
+		padding-right: 24px !important;
+		width: 100%;
+		font-size: 16px !important;
+		line-height: 22px !important;
+	}
+
+	.polCode {
+		font-size: 16px !important;
+	}
+
+	.addPolitician {
+		width: auto !important;
+		min-height: 42px !important;
+		height: auto !important;
+		margin-left: 24px !important;
+		margin-right: 24px !important;
+		font-size: 16px !important;
+		line-height: 22px !important;
+	}
+
+	.questionList, .politicianList {
+		font-size: 1.5rem;
+	}
+
+	.buttonColumns1 {
+		padding-right: 12px;
+	}
+
+	.buttonColumns {
+		padding-left: 12px;
+	}
+	
+	.aTitle {
+		font-size: 24px !important;
+		line-height: 30px !important;
+	}
+	
+	.submitEmail {
+		font-size: 16px !important;
+		line-height: 22px !important;
+	}
+	
+	.submitQuestion, .editBtn, .deleteBtn {
+		font-size: 16px !important;
+		height: 42px !important;
+	}
+	
+	.questionParag {
+		font-size: 16px !important;
+		line-height: 22px !important;
+	}
+	
+	.questionInput, .emailInput {
+		height: 42px !important;
+	}
+	
+	.question {
+		font-size: 16px !important;
+		line-height: 22px !important;
+	}
+}
+
+@media only screen and (max-width: 538px) {
+	.agreement {
+		display: none;
+	}
+
+	.agreement1 {
+		display: flex;
+	}
+
+	.addPolitician {
+		height: auto !important;
+	}
+}
+
+.aTitle {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: left;
+	padding-left: 24px;
+	padding-bottom: 24px;
+	padding-top: 40px;
+	margin: 0;
+}
+
+.inputColumns {
+	padding-left: 36px;
+	width: 50%;
+
+}
+
+.questionInput {
+	height: 58px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 24px;
+	width: 75%;
+	margin-left: 12px;
+}
+
+.submitQuestion, .editBtn, .deleteBtn, .deleteBtn1 {
+	float: right;
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	height: 58px;
+	width: 186px;
+}
+
+.submitQuestion {
+	margin-right: 24px;
+}
+
+.delBtnCol {
+	
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.deleteBtn {
+	background: #EE6C4D;
+	margin-right: 0;
+}
+
+.deleteBtn1 {
+	background: #EE6C4D;
+	margin-right: 24px;
+}
+
+.submitBtnColumns {
+	align-self: flex-end;
+	width: 50%;
+}
+
+.formRow {
+	display: flex;
+}
+
+.firstLine {
+	border-width:0;
+	color: black;
+	width: 95%;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	opacity: 1;
+	margin-top: 24px;
+}
+
+.betweenLine {
+	border-width:0;
+	color: black;
+	width: 40%;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	opacity: 1;
+	margin-top: 24px;
+	margin-bottom: 40px;
+}
+
+.questionParag {
+	padding-left: 48px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.buttonsColumns {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.buttonsColumns1 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.addPolitician {
+	background: #3D5A80;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	height: 58px;
+	width: auto;
+}
+
+.addPoliticianCol {
+	display: flex;
+	justify-content: center;
+}
+
+.polCode {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	color: #000000;
+	width: 100%;
+	padding: 24px;
+	margin-bottom: 0;
+}
+
+.emailInput {
+	height: 58px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 24px;
+	width: 100%;
+}
+
+.submitEmail {
+	float: right;
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	height: 58px;
+	width: 186px;
+	margin-right: 24px;
+}
+
+.politicianParag {
+	/*padding-left: 48px;*/
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.politicianCols {
+	display: flex;
+	align-items: center;
+}
+
+.politicianRow {
+	margin-bottom: 24px;
+}
+
+
+
+.addPolitician:hover,
+.submitQuestion:hover,
+.submitEmail:hover,
+.showResults:hover,
+.editBtn:hover,
+.questionList:hover,
+.politicianList:hover,
+.btn-secondary:hover {
+	color: #FFFFFF;
+	box-shadow: 0px 0px 10px #3D5A80;
+	outline: none;
+	cursor: pointer;
+}
+
+.deleteBtn:hover,
+.deleteBtn1:hover {
+	color: #FFFFFF;
+	box-shadow: 0px 0px 10px #EE6C4D;
+	outline: none;
+	cursor: pointer;
+}
+
+.addPolitician:focus,
+.submitQuestion:focus,
+.submitEmail:focus,
+.deleteBtn:focus,
+.deleteBtn1:focus,
+.showResults:focus,
+.editBtn:focus,
+.questionList:focus,
+.politicianList:focus,
+.btn-secondary:focus {
+	color: #FFFFFF;
+	box-shadow: none;
+	outline: none;
+}
+
+.emailInput:focus,
+.questionInput:focus {
+	outline: none;
+	box-shadow: none;
+	border: 1px solid #3D5A80;
+}
+
+#invitecodeForCandidate {
+	height: 58px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 24px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.someCol {
+	margin-left: 12px;
+}
+
+.btn-secondary {
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	height: 58px;
+	width: 186px;
+	margin-right: 24px;
+}
+
+.pForInvCode2 {
+	padding-top: 16px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.candNrB {
+	padding-left: 48px;
+	padding-right: 5px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+
+}
+.lefty {
+	margin-left: 42px;
+}
+.errormssg {
+	align-items: center;
+	color: #F61313 !important; 
+	padding: 12px ;
+	
+
+}

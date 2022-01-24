@@ -1,0 +1,236 @@
+/*Fonts*/
+@import
+	url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700&display=swap")
+	;
+html, body {
+	font-family: "Roboto", sans-serif;
+	background-color: #EDF2FD;
+}
+
+.blob {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 4px;
+	padding-left: 24px;
+}
+
+.firstblob {
+	padding-left: 24px;
+}
+
+@media screen and (max-width: 988px) {
+	.firstblob {
+		font-size: 85%;
+	}
+}
+
+@media ( max-width : 768px ) {
+	.head-lbl {
+		font-size: 16px;
+		line-height: 28px;
+		padding-bottom: 8px;
+		margin-bottom: 0;
+		text-align: left;
+		padding-left: 24px;
+		margin-top: 72px;
+	}
+}
+
+@media ( min-width : 768px ) {
+	.head-lbl {
+		font-size: 24px;
+		line-height: 28px;
+		padding-bottom: 8px;
+		margin-bottom: 0;
+		text-align: left;
+		padding-left: 24px;
+		margin-top: 72px;
+	}
+}
+
+/*.navbar.fixed-top.navbar-inverse {
+    background-color: #fafafa;
+    border: #ffffff;
+    display: inline;
+}
+.navbar {
+    text-align: left;
+    min-height: 20px;
+    max-height: 50px;
+}
+.navbar-brand {
+    
+    padding-left: 24px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #000000 !important;
+ }
+ */
+.background-row {
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.background-col {
+	max-width: 1400px;
+	width: 70%;
+}
+
+.header-toppage {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 10px;
+	position: relative;
+}
+
+.card {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #FAFAFA;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	/* align-items: center;
+    justify-content: center;
+    width: 100%;
+	min-height: 500px;
+    left: 86px;
+    top: 92px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;*/
+}
+
+.content {
+	display: flex;
+	position: relative;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+}
+
+.content-double {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+}
+
+.info-elect {
+	font-size: 24px;
+}
+
+#quiz-button {
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	border: 1px solid #3D5A80;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+	color: #FFFFFF;
+	width: 100%;
+
+	/*font-size: 64px;
+color: #fafafa !important;
+
+width: 439px;
+height: 100px;
+/*width: 50%;
+height: 50%;
+left: 812px;
+top: 440px;
+border-color: #3D5A80 ;
+    
+background: #3D5A80;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 24px;*/
+}
+
+.form-group {
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.reg-form, .login-form {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	max-width: 214px;
+}
+
+.form-lbl {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+}
+
+.inputs {
+	margin-right: 0px;
+	width: 100%;
+	padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"],
+	#floatingTextarea2 {
+	height: 30px;
+	/*width: 100%;*/
+	width: 100%;
+	margin: 0px;
+	border-radius: 24px;
+	border: 1px solid #000000;
+}
+
+#subutton {
+	align-items: center;
+	/* width: 75%; */
+	max-height: 58px;
+	color: #FFFFFF;
+	border: 1px solid #3D5A80;
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	margin-top: 16px;
+}
+
+.subbtn {
+	align-items: center;
+	/* width: 75%; */
+	max-height: 58px;
+	color: #FFFFFF;
+	border: 1px solid #3D5A80;
+	background: #3D5A80;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	margin-top: 16px;
+}
+
+.closeBtn {
+	align-items: center;
+	/* width: 75%; */
+	max-height: 58px;
+	color: #FFFFFF;
+	border: 1px solid #EE6C4D;
+	background: #EE6C4D;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	margin-top: 16px;
+	
+}
+
+.modalStatus {
+	margin-top: 16px;
+	color: #F61313;
+	text-align: center;
+}

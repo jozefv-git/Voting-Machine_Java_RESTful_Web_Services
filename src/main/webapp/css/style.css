@@ -1,0 +1,311 @@
+@charset "ISO-8859-1";
+/*Fonts*/
+@import
+	url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700&display=swap")
+	;
+html, body {
+	background-color: #EDF2FD;
+	font-family: "Roboto", sans-serif;
+}
+.container {
+	/*border: solid; - only for test purposes*/
+	height: auto;
+	max-width: 1200px; /*Looks better than 1400px*/
+} 
+.card.rounded_card {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	border-radius: 24px;
+	margin-bottom: 24px;
+	background-color: #FAFAFA;
+}
+.card.rounded_card_results {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	border-radius: 24px;
+	margin-bottom: 24px;
+	background-color: #FAFAFA;
+}
+.medium_big_t {
+	font-size: 48px;
+	font-weight: bold;
+}
+.btn.btn_rounded_primary {
+	border-radius: 24px;
+	background-color: #3D5A80;
+	width: auto;
+	height: auto;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+/*Navigation bar*/
+.blob {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 4px;
+	padding-left: 24px;
+}
+.firstblob {
+	padding-left: 24px;
+}
+/*-------------------------Statistic page----------------------*/
+/*Statistics circles - selection*/
+.panel {
+	display: inline-flex;
+	width: 100%; /*Size of element will be same as parent element*/
+	min-width: 200px;
+	flex-direction: row; /*This makes element in one row*/
+	align-items: center; /*This will center it*/
+	/*justify-content: center; align flex items center inside the container - but we dont need it bcs
+	our items will be allways centered bcs of margin auto */
+}
+.statistic_circle {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	position: relative;
+	border: 1px solid black;
+	margin: auto;
+}
+/*-------------------------Result page----------------------*/
+.board {
+	display: inline-flex;
+	width: 100%; /*Size of element will be same as parent element*/
+	height: 100%;
+	flex-direction: column; /*This makes element in one row*/
+	align-items: center; /*This will center it*/
+	/*justify-content: center; align flex items center inside the container - but we dont need it bcs
+	our items will be allways centered bcs of margin auto */
+}
+.div_circle_result_win {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: #3D5A80;
+	margin: auto;
+}
+.div_circle_result_win_secondary {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: #3D5A80;
+	opacity: 0.51;
+	margin: auto;
+}
+/*-------------------------Result-Detail page----------------------*/
+/*Clases to create radio buttons as inline element*/
+.controls {
+	display: flex;
+	min-width: 200px;
+}
+
+.radio {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*This is customized radio button*/
+input[type='radio']:after {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	top: -6px;
+	left: -4px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 1px solid black;
+	/*Non clicked button*/
+}
+input[type='radio']:checked:after {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	top: -6px;
+	left: -4px;
+	position: relative;
+	background-color: #3D5A80;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	/*border: 2px solid white; -> This is for button when is clicked*/
+}
+/*Image profile*/
+img {
+	max-width: 230px;
+	max-height: 305px;
+	border-radius: 24px;
+}
+/*Relative position means that we can place another element inside element with relative position 
+whatever we want, element what we are want to place inside, must have absolute position */
+/*if we working with columns and bootstrap, we must also specified height for component with relative position
+otherwise, the content will overlap each other(when we will change the screen size for smaller )*/
+/*width and height 100% means, that element have size of it parent element, if we use auto, the size will be 
+changed according to content*/
+.img_div {
+	width: 100%;
+	height: 100%;
+	border-radius: 24px;
+	position: relative;
+}
+.profile_div {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.div_circle {
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: #FDFFA4;
+	position: absolute;
+	left: 59%;
+	top: 65%;
+}
+/*Borderless table*/
+.table thead tr th, .table tbody tr td {
+	border: none;
+	/*font-weight: normal;*/
+}
+.table-responsive-stack tr {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	padding-bottom: 16px;
+}
+.table-responsive-stack td, .table-responsive-stack th {
+	display: block;
+	/*      
+   flex-grow | flex-shrink | flex-basis   */
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	margin-bottom: 0px;
+}
+.table-responsive-stack .table-responsive-stack-thead {
+	font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+	.table-responsive-stack tr {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		border-bottom: 3px solid #ccc;
+		display: block;
+		padding-bottom: 16px;
+	}
+	/*  IE9 FIX   */
+	.table-responsive-stack td {
+		float: left\9;
+		width: 100%;
+	}
+}
+/*-------------------------Media queries----------------------*/
+/* Small devices (landscape phones, 544px and up) */
+@media ( max-width : 544px) {
+	h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+	} /*1rem = 16px*/
+	h2 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.result_text {
+		padding-top: 16px;
+		padding-bottom: 24px;
+	}
+}
+@media ( min-width : 545px) {
+	h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+	} /*1rem = 16px*/
+	h2 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.result_text {
+		padding-top: 16px;
+		padding-bottom: 24px;
+	}
+}
+@media ( min-width : 575px ) {
+	.circle_margin {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media ( min-width : 768px) {
+	h1 {
+		font-size: 3rem;
+		font-weight: bold;
+	} /*1rem = 16px*/
+	h2 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.disagre_agree {
+		max-width: 225px;
+		width: 100%;
+		margin-right: auto;
+	}
+}
+
+@media ( max-width : 768px ) {
+	.top_margin {
+		margin-top: 16px;
+	}
+	.color_column {
+		background-color: #FDFFA4;
+	}
+
+	.disagre_agree {
+		width: 100%;
+		margin-right: auto;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media ( min-width : 992px) {
+	h1 {
+		font-size: 4rem;
+		font-weight: bold;
+	} /*1rem = 16px*/
+	h2 {
+		font-size: 2.25rem;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+}
